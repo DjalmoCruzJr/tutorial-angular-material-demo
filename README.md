@@ -1,8 +1,8 @@
-#Tutorial Angular Material Demo
+# Tutorial Angular Material Demo
 
 An example of using angular material components
 
-##Components Examples
+## Components Examples
 
 - Form Controls
 > - Autocomplete 
