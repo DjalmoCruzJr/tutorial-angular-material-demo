@@ -1,0 +1,129 @@
+<mat-toolbar color="primary">
+  <div style="display: flex; align-items: center; cursor: pointer;">
+    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    <span style="margin-left: 20px;">Angular Material Demo</span>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container style="height: calc(100vh - 65px);">
+  <mat-sidenav #sidenav mode="over" style="min-width: 30%; padding: 10px;">
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title><strong>Form Control</strong></mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-list-item routerLink="/autocomplete" (click)="sidenav.toggle()">Autocomplete</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/checkbox" (click)="sidenav.toggle()">Checkbox</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/datepicker" (click)="sidenav.toggle()">Datepicker</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/form-field" (click)="sidenav.toggle()">Form Field</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/input" (click)="sidenav.toggle()">Input</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/radio" (click)="sidenav.toggle()">Radio</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/select" (click)="sidenav.toggle()">Select</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/slider" (click)="sidenav.toggle()">Slider</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/slide-toggle" (click)="sidenav.toggle()">Slide Toggle</mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title><strong>Navigation</strong></mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-list-item routerLink="/menu" (click)="sidenav.toggle()">Menu</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/sidenav" (click)="sidenav.toggle()">Sidenav</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/toolbar" (click)="sidenav.toggle()">Toolbar</mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title><strong>Layout</strong></mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-list-item routerLink="/card" (click)="sidenav.toggle()">Card</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/divider" (click)="sidenav.toggle()">Divider</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/expansion-panel" (click)="sidenav.toggle()">Expansion Panel</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/grid-list" (click)="sidenav.toggle()">Grid List</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/list" (click)="sidenav.toggle()">List</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/stepper" (click)="sidenav.toggle()">Stepper</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/tabs" (click)="sidenav.toggle()">Tabs</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/tree" (click)="sidenav.toggle()">Tree</mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title><strong>Buttons & Indicators</strong></mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-list-item routerLink="/button" (click)="sidenav.toggle()">Button</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/button-toggle" (click)="sidenav.toggle()">Button Toggle</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/badge" (click)="sidenav.toggle()">Badge</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/chips" (click)="sidenav.toggle()">Chips</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/icon" (click)="sidenav.toggle()">Icon</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/progress-spinner" (click)="sidenav.toggle()">Progress Spinner</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/prograss-bar" (click)="sidenav.toggle()">Prograss Bar</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/ripples" (click)="sidenav.toggle()">Ripples</mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title><strong>Popups & Modals</strong></mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-list-item routerLink="/bottom-sheet" (click)="sidenav.toggle()">Bottom Sheet</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/dialog" (click)="sidenav.toggle()">Dialog</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/snackbar" (click)="sidenav.toggle()">Snackbar</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/tooltip" (click)="sidenav.toggle()">Tooltip</mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title><strong>Data Table</strong></mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-list-item routerLink="/paginator" (click)="sidenav.toggle()">Paginator</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/sort-header" (click)="sidenav.toggle()">Sort Header</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/table" (click)="sidenav.toggle()">Table</mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-sidenav>
+
+  <mat-sidenav-content style="min-width: 100%; padding: 10px;">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
