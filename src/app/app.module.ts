@@ -42,58 +42,50 @@ import { PaginatorComponent } from './components/paginator/paginator.component';
 import { SortHeaderComponent } from './components/sort-header/sort-header.component';
 import { TableComponent } from './components/table/table.component';
 import { ListComponent } from './components/list/list.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-@NgModule(
-  {
-    declarations: [
-      AppComponent,
-      AutocompleteComponent,
-      CheckboxComponent,
-      DatepickerComponent,
-      FormFieldComponent,
-      InputComponent,
-      RadioComponent,
-      SelectComponent,
-      SliderComponent,
-      SlideToggleComponent,
-      IndexComponent,
-      MenuComponent,
-      SidenavComponent,
-      ToolbarComponent,
-      CardComponent,
-      DividerComponent,
-      ExpansionPanelComponent,
-      GridListComponent,
-      StepperComponent,
-      TabsComponent,
-      TreeComponent,
-      ButtonComponent,
-      ButtonToggleComponent,
-      BadgeComponent,
-      ChipsComponent,
-      IconComponent,
-      ProgressSpinnerComponent,
-      ProgressBarComponent,
-      RipplesComponent,
-      BottomSheetComponent,
-      DialogComponent,
-      SnackbarComponent,
-      TooltipComponent,
-      PaginatorComponent,
-      SortHeaderComponent,
-      TableComponent,
-      ListComponent
-    ],
-    imports: [
-      BrowserModule,
-      BrowserAnimationsModule,
-      MaterialModule,
-      AppRoutingModule
-    ],
-    providers: [],
-    bootstrap: [
-      AppComponent
-    ]
-  }
-)
+@NgModule({
+  declarations: [
+    AppComponent,
+    AutocompleteComponent,
+    CheckboxComponent,
+    DatepickerComponent,
+    FormFieldComponent,
+    InputComponent,
+    RadioComponent,
+    SelectComponent,
+    SliderComponent,
+    SlideToggleComponent,
+    IndexComponent,
+    MenuComponent,
+    SidenavComponent,
+    ToolbarComponent,
+    CardComponent,
+    DividerComponent,
+    ExpansionPanelComponent,
+    GridListComponent,
+    StepperComponent,
+    TabsComponent,
+    TreeComponent,
+    ButtonComponent,
+    ButtonToggleComponent,
+    BadgeComponent,
+    ChipsComponent,
+    IconComponent,
+    ProgressSpinnerComponent,
+    ProgressBarComponent,
+    RipplesComponent,
+    BottomSheetComponent,
+    DialogComponent,
+    SnackbarComponent,
+    TooltipComponent,
+    PaginatorComponent,
+    SortHeaderComponent,
+    TableComponent,
+    ListComponent
+  ],
+  imports: [BrowserModule, BrowserAnimationsModule, MaterialModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
 export class AppModule {}

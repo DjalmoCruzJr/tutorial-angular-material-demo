@@ -1,1 +1,77 @@
-<p>form-field works!</p>
+<div class="container">
+  <div class="row">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title><h5>Datepicker Overview</h5></mat-card-title>
+        <mat-card-subtitle><mat-divider></mat-divider></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group>
+          <mat-tab label="HTML">
+            <pre>
+                    <code>
+                        <![CDATA[
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Input">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Textarea"></textarea>
+  </mat-form-field>
+
+                        ]]>
+                    </code>
+                  </pre>
+          </mat-tab>
+          <mat-tab label="TS">
+            <pre>
+                        <code>
+                            <![CDATA[
+import {Component} from '@angular/core';
+
+/** @title Simple form field */
+@Component({
+  selector: 'form-field-overview-example',
+  templateUrl: 'form-field-overview-example.html',
+  styleUrls: ['form-field-overview-example.css'],
+})
+export class FormFieldOverviewExample {}
+                            ]]>
+                        </code>
+                      </pre>
+          </mat-tab>
+          <mat-tab label="CSS">
+            <pre>
+                <code>
+                            <![CDATA[
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+                            ]]>
+                </code>
+              </pre>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+      <mat-card-actions>
+        <mat-divider></mat-divider>
+        <br />
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="Input" />
+          </mat-form-field>
+
+          <mat-form-field>
+            <textarea matInput placeholder="Textarea"></textarea>
+          </mat-form-field>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

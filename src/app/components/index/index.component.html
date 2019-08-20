@@ -1,1 +1,28 @@
-<p>index works!</p>
+<div class="container">
+  <div class="row">
+    <p>
+      Angular Material comprises a range of components which implement common interaction patterns according to the
+      Material Design specification.
+      <br />
+      To more information, look at
+      <a href="https://material.angular.io/" target="_blank">Angular Material Official Documentation.</a>
+    </p>
+  </div>
+
+  <div class="row">
+    <mat-card *ngFor="let card of cards">
+      <mat-card-header>
+        <mat-card-title>{{ card.title }}</mat-card-title>
+        <mat-card-subtitle>{{ card.subtittle }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item *ngFor="let item of card.items" routerLink="{{ item.route }}">
+            <span>{{ item.title }}</span>
+            <mat-divider></mat-divider>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

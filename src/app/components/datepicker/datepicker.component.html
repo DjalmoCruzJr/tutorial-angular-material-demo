@@ -1,1 +1,62 @@
-<p>datepicker works!</p>
+<div class="container">
+  <div class="row">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title><h5>Datepicker Overview</h5></mat-card-title>
+        <mat-card-subtitle><mat-divider></mat-divider></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group>
+          <mat-tab label="HTML">
+            <pre>
+                  <code>
+                      <![CDATA[
+<mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+                      ]]>
+                  </code>
+                </pre>
+          </mat-tab>
+          <mat-tab label="TS">
+            <pre>
+                      <code>
+                          <![CDATA[
+import {Component} from '@angular/core';
+
+/** @title Basic datepicker */
+@Component({
+  selector: 'datepicker-overview-example',
+  templateUrl: 'datepicker-overview-example.html',
+  styleUrls: ['datepicker-overview-example.css'],
+})
+export class DatepickerOverviewExample {}
+                          ]]>
+                      </code>
+                    </pre>
+          </mat-tab>
+          <mat-tab label="CSS">
+            <pre>
+              <code>
+                          <![CDATA[
+/** No CSS for this example */
+                          ]]>
+              </code>
+            </pre>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+      <mat-card-actions>
+        <mat-divider></mat-divider>
+        <br />
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Choose a date" />
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
