@@ -1,4 +1,4 @@
-# Tutorial Angular Material Demo
+# Tutorial Angular Material Demo <img src="https://material.angular.io/assets/img/homepage/angular-white-transparent.svg" style="background-color: #3f51b5;">
 
 An example of using angular material components
 
