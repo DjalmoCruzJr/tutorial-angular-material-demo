@@ -2,7 +2,7 @@
 
 An example of using angular material components
 
-To more info, look at (Angular Material Doc)[https://material.angular.io]
+To more info, look at [Angular Material Doc](https://material.angular.io)
 
 ## Components Examples
 
