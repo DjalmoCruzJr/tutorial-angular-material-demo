@@ -4,7 +4,7 @@ An example of using angular material components
 
 ##Components Examples
 
--Form Controls
+- Form Controls
 -- Autocomplete 
 -- Checkbox
 -- Datepicker
