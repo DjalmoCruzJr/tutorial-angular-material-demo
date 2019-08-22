@@ -1,1 +1,59 @@
-<p>slider works!</p>
+<div class="container">
+  <div class="row">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title><h5>Select Overview</h5></mat-card-title>
+        <mat-card-subtitle><mat-divider></mat-divider></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group>
+          <mat-tab label="HTML">
+            <pre>
+              <code>
+                <![CDATA[
+<mat-slider></mat-slider>
+                ]]>
+              </code>
+            </pre>
+          </mat-tab>
+          <mat-tab label="TS">
+            <pre>
+              <code>
+                  <![CDATA[
+import {Component} from '@angular/core';
+
+/**
+  * @title Basic slider
+  */
+@Component({
+  selector: 'slider-overview-example',
+  templateUrl: 'slider-overview-example.html',
+  styleUrls: ['slider-overview-example.css'],
+})
+export class SliderOverviewExample {}
+                  ]]>
+              </code>
+            </pre>
+          </mat-tab>
+          <mat-tab label="CSS">
+            <pre>
+                <code>
+                  <![CDATA[
+/** No CSS for this example */
+mat-slider {
+  width: 300px;
+}
+                  ]]>
+                </code>
+              </pre>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+      <mat-card-actions>
+        <mat-divider></mat-divider>
+        <br />
+        <mat-slider></mat-slider>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
