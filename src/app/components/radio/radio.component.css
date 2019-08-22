@@ -1,3 +1,20 @@
+.container {
+  padding: 20px 30px;
+  min-width: calc(100vw - 60px);
+}
+
+.row {
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+
+mat-card {
+  min-width: 100%;
+}
+
 .mat-radio-button ~ .mat-radio-button {
   margin-left: 16px;
 }
