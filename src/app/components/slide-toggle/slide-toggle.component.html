@@ -1,1 +1,56 @@
-<p>slide-toggle works!</p>
+<div class="container">
+  <div class="row">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title><h5>Slide Toggle Overview</h5></mat-card-title>
+        <mat-card-subtitle><mat-divider></mat-divider></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group>
+          <mat-tab label="HTML">
+            <pre>
+              <code>
+                <![CDATA[
+<mat-slide-toggle>Slide me!</mat-slide-toggle>
+                ]]>
+              </code>
+            </pre>
+          </mat-tab>
+          <mat-tab label="TS">
+            <pre>
+              <code>
+                  <![CDATA[
+import {Component} from '@angular/core';
+
+/**
+  * @title Basic slide-toggles
+  */
+@Component({
+  selector: 'slide-toggle-overview-example',
+  templateUrl: 'slide-toggle-overview-example.html',
+  styleUrls: ['slide-toggle-overview-example.css'],
+})
+export class SlideToggleOverviewExample {}
+                  ]]>
+              </code>
+            </pre>
+          </mat-tab>
+          <mat-tab label="CSS">
+            <pre>
+                <code>
+                  <![CDATA[
+/** No CSS for this example */
+                  ]]>
+                </code>
+              </pre>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+      <mat-card-actions>
+        <mat-divider></mat-divider>
+        <br />
+        <mat-slide-toggle>Slide me!</mat-slide-toggle>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
