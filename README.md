@@ -1,8 +1,8 @@
 # Tutorial Angular Material Demo
 
-An example of using angular material components
+An example of using the angular material components
 
-To more info, look at [Angular Material Doc](https://material.angular.io)
+To more info, take a look at [Angular Material Doc](https://material.angular.io)
 
 ## Components Examples
 
